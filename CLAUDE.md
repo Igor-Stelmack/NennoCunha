@@ -28,7 +28,7 @@ Rodar local: `python3 -m http.server` e abrir http://localhost:8000.
 - 1ª versão: "Luna Moraes" (tatuadora fictícia, desenho de rosa) — ver o histórico do git.
 - Crâne Tattoo Studio: caveira fine line, detalhes em verde `#2f7d57`.
 - Daedra Tattoo (Flavia Carvalho, @daedracwb, WhatsApp 41 99883-7314): base branco e preto, detalhes em turquesa `#12908a` (`--accent`) e rosa `#e2508a` (`--accent-2`, classe `art__path--acc2`); desenho de borboleta + coração. Proposta: https://claude.ai/artifact/UK5XkfQNtrmm7TdP1LSPiS
-- Nenno Cunha Tattoo Studio (@nennocunha.tattoo, WhatsApp 41 99969-5805, R. Antônio Lago 70, Boa Vista; realismo preto e cinza e fine line, desde 2005): base branco e preto, detalhes dourados `#9c7a3c` (do logo NC); sigla "NC"; desenho de punhal ornamental.
+- Nenno Cunha Tattoo Studio (@nennocunha.tattoo, WhatsApp 41 99969-5805, R. Antônio Lago 70, Boa Vista; realismo preto e cinza e fine line, desde 2005): base branco e preto, detalhes dourados `#9c7a3c` (do logo NC); sigla "NC"; desenho de punhal ornamental. Proposta: https://claude.ai/artifact/J6qfP4h9BzknmLZoMeuC8b
 - Bug corrigido: o centro do desenho (`#art`) é posicionado só pelo GSAP (`xPercent/yPercent -50`); não colocar `transform` no CSS do `.art`.
 
 ## Proposta comercial
