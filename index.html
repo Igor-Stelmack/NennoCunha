@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nenno Cunha Tattoo Studio — Curitiba</title>
+  <meta name="description" content="Nenno Cunha Tattoo Studio — realismo preto e cinza e fine line em Curitiba, PR, desde 2005." />
+  <meta name="theme-color" content="#0b0b0b" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%230c0c0c%27/%3E%3Ctext x=%2716%27 y=%2722%27 font-family=%27serif%27 font-style=%27italic%27 font-size=%2720%27 fill=%27%23d1b47c%27 text-anchor=%27middle%27%3EN%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="vendor/lenis.css" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three.module.min.js" } }
+  </script>
+</head>
+<body class="is-loading">
+
+  <!-- ================= LOADER ================= -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <svg class="loader__lines" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" fill="none">
+      <path d="M-20 620 C 240 560 380 700 620 640 S 1000 520 1240 590 S 1520 660 1640 600" />
+      <path d="M-20 260 C 200 300 420 180 640 230 S 1040 330 1260 250 S 1500 190 1640 230" />
+      <path d="M380 -20 C 420 200 300 380 360 560 S 480 820 430 920" />
+      <path d="M1180 -20 C 1140 180 1260 360 1210 560 S 1120 800 1170 920" />
+      <circle cx="1210" cy="250" r="3" /><circle cx="360" cy="640" r="3" />
+      <path d="M150 760 l14 0 M157 753 l0 14" /><path d="M1440 120 l14 0 M1447 113 l0 14" />
+    </svg>
+
+    <div class="loader__badge" id="loaderBadge">
+      <span class="loader__badge-top">tattoo studio</span>
+      <span class="loader__badge-name">Nenno <i>Cunha</i></span>
+      <span class="loader__badge-sub">curitiba · pr</span>
+    </div>
+
+    <div class="loader__foot">
+      <span class="loader__status">preparando a tinta</span>
+      <span class="loader__count"><span id="loaderCount">0</span></span>
+    </div>
+    <div class="loader__bar"><span id="loaderBar"></span></div>
+  </div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="nav" id="nav">
+    <div class="nav__left">
+      <button class="nav__menu" aria-label="Menu"><i></i><i></i></button>
+      <span class="nav__crumbs">Home <b>·</b> Estúdio <b>·</b> Curitiba</span>
+    </div>
+    <a href="#" class="nav__logo"><span>Nenno Cunha</span><i>tattoo</i></a>
+    <div class="nav__right">
+      <a href="https://www.instagram.com/nennocunha.tattoo/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/5541999695805" target="_blank" rel="noopener" class="nav__cta">Agendar</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= STAGE (pinned) ================= -->
+    <section class="stage" id="stage">
+      <div class="paper" aria-hidden="true"></div>
+
+      <!-- fine-line illustration traced by the needle -->
+      <div class="art" id="art">
+        <svg class="art__svg" id="artSvg" viewBox="0 0 400 500" fill="none">
+          <!-- punhal ornamental: each path is one stroke; the needle lifts between them -->
+          <path class="art__path" d="M200 62 C209 62 215 69 215 78 C215 87 209 94 200 94 C191 94 185 87 185 78 C185 69 191 62 200 62" />
+          <path class="art__path" d="M190 94 L188 160 L212 160 L210 94 Z" />
+          <path class="art__path" d="M190 108 L210 113 M189 124 L211 129 M189 140 L211 145" />
+          <path class="art__path" d="M188 160 C168 160 140 158 120 168 C130 176 160 178 188 178 L212 178 C240 178 270 176 280 168 C260 158 232 160 212 160" />
+          <path class="art__path" d="M120 168 C106 162 102 148 113 145 C122 143 125 154 118 157" />
+          <path class="art__path" d="M280 168 C294 162 298 148 287 145 C278 143 275 154 282 157" />
+          <path class="art__path art__path--acc" d="M200 161 L207 169 L200 177 L193 169 Z" />
+          <path class="art__path" d="M188 178 L186 380 L200 446 L214 380 L212 178" />
+          <path class="art__path" d="M200 188 L200 404" />
+          <path class="art__path" d="M186 204 C160 198 138 212 130 234 C152 236 174 224 186 212" />
+          <path class="art__path" d="M214 204 C240 198 262 212 270 234 C248 236 226 224 214 212" />
+          <path class="art__path" d="M186 236 C166 240 152 256 150 274 C168 270 182 258 186 246" />
+          <path class="art__path" d="M214 236 C234 240 248 256 250 274 C232 270 218 258 214 246" />
+          <path class="art__path art__path--acc" d="M200 458 C192 470 190 478 200 486 C210 478 208 470 200 458" />
+          <path class="art__path art__path--acc" d="M318 110 L318 130 M308 120 L328 120" />
+          <path class="art__path art__path--acc" d="M84 330 L84 346 M76 338 L92 338" />
+          <g class="art__dots" id="artDots">
+            <circle cx="96" cy="140" r="1.5"/><circle cx="80" cy="200" r="1"/><circle cx="306" cy="128" r="1.3"/>
+            <circle cx="322" cy="196" r="1"/><circle cx="92" cy="262" r="1.2"/><circle cx="312" cy="268" r="1.4"/>
+            <circle cx="150" cy="70" r="1"/><circle cx="252" cy="64" r="1.2"/><circle cx="110" cy="340" r=".9"/>
+            <circle cx="292" cy="342" r="1.1"/><circle cx="200" cy="52" r=".8"/>
+          </g>
+        </svg>
+      </div>
+
+      <canvas class="gl" id="gl"></canvas>
+
+      <!-- HERO -->
+      <div class="hero" id="hero">
+        <div class="hero__brand">
+          <h1 class="hero__title"><span class="mask"><span data-rise>Nenno Cunha</span></span></h1>
+          <p class="hero__sub"><span class="mask"><span data-rise>Tattoo studio em Curitiba <em class="acc">—</em> PR</span></span></p>
+        </div>
+        <div class="hero__year"><span class="mask"><span data-rise>NC</span></span></div>
+        <div class="hero__stats">
+          <span class="mask"><span data-rise><b>Desde</b> 2005</span></span>
+          <span class="mask"><span data-rise><b>4,7 ★</b> no Google</span></span>
+        </div>
+        <div class="hero__scroll"><span>Role para baixo para descobrir mais</span><i aria-hidden="true">↓</i></div>
+      </div>
+
+      <!-- BEAT 1 -->
+      <div class="beat beat--right" id="beat1">
+        <h2 class="beat__title">
+          <span class="mask"><span>Realismo que</span></span>
+          <span class="mask"><span>ganha vida</span></span>
+          <span class="mask"><span>na <b class="acc">pele.</b></span></span>
+        </h2>
+        <p class="beat__text">Do realismo preto e cinza ao fine line, cada projeto é desenhado para o seu corpo — com técnica, contraste e um traço que atravessa o tempo.</p>
+        <div class="beat__cols">
+          <div><span class="label">Estilos</span><p>Realismo preto e cinza, fine line, ornamental e tribal.</p></div>
+          <div><span class="label">Estúdio</span><p>Boa Vista, Curitiba. Tatuagem e piercing com hora marcada.</p></div>
+        </div>
+      </div>
+
+      <!-- BEAT 2: attributes around the drawing -->
+      <div class="attrs" id="attrs">
+        <div class="attr attr--a"><h3><em>*</em>Realismo</h3><p>Preto e cinza com profundidade, contraste e detalhe.</p></div>
+        <div class="attr attr--b"><h3><em>*</em>Fine line</h3><p>Linhas finas e precisas, do primeiro risco ao último.</p></div>
+        <div class="attr attr--c"><h3><em>*</em>Higiene</h3><p>Material descartável e estéril em cada sessão.</p></div>
+        <div class="attr attr--d"><h3><em>*</em>Cuidado</h3><p>Acompanhamento até a cicatrização completa.</p></div>
+      </div>
+
+      <!-- FINAL -->
+      <div class="beat beat--left" id="final">
+        <h2 class="beat__title beat__title--big">
+          <span class="mask"><span>Sua pele.</span></span>
+          <span class="mask"><span><i>Nossa <span class="acc">arte.</span></i></span></span>
+        </h2>
+        <p class="beat__text">Conte sua ideia e a gente transforma em desenho. Agende seu horário no estúdio.</p>
+        <a href="https://wa.me/5541999695805" target="_blank" rel="noopener" class="btn"><span>Agendar sessão</span><span class="btn__arrow">→</span></a>
+      </div>
+
+      <div class="rail" aria-hidden="true"><span id="railBar"></span></div>
+    </section>
+  </main>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
